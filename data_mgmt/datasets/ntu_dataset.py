@@ -10,8 +10,8 @@ from typing import Dict
 
 label_action = [
     {"id": 0, "A043": "falling"},
-    {"id" : 1, "A008" : "sitting down"},
-    {"id": 1, "A026": "hopping (one foot jumping)"},
+    {"id" : 1, "A080" : "squat down"},
+    # {"id": 1, "A026": "hopping (one foot jumping)"},
 ]
 
 file_name_regex = r"S(\d{3})C001P(\d{3})R(\d{3})A(\d{3})"
