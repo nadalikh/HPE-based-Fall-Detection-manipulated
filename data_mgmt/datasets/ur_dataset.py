@@ -98,6 +98,7 @@ class URDataset(Dataset):
                     file_path = os.path.join(root, file)
 
                     kps = np.load(file_path)
+                    kps = kps.reshape(1, 33, 3)
                     kps = kps[:, :, :3]
                     pose_graphs = self._create_pose_graph(torch.tensor(kps))
                     kps = self._get_flattened_keypoints(torch.tensor(kps))
